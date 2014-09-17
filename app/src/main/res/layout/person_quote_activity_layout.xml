@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/quote_activity_person_image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:viewName="image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/quote_activity_person_name"
+        android:layout_width="match_parent"
+        android:viewName="name"
+        android:text="Albert"
+        android:textAppearance="?android:textAppearanceLarge"
+        android:textStyle="italic"
+        android:gravity="center_vertical"
+        android:padding="@dimen/activity_horizontal_margin"
+        android:layout_height="100dp" />
+
+</LinearLayout>
