@@ -70,15 +70,15 @@ public class HomeScreenActivity extends Activity {
 	protected void onResume() {
 		super.onResume();
 		if (mViewHolder != null) {
-			mViewHolder.mImageView.setViewName(null);
-			mViewHolder.mTextView.setViewName(null);
+			mViewHolder.mImageView.setTransitionName(null);
+			mViewHolder.mTextView.setTransitionName(null);
 		}
 	}
 
 	private void startQuoteActivity(PersonAdapter.ViewHolder holder) {
 		mViewHolder = holder;
-		holder.mImageView.setViewName("image");
-		holder.mTextView.setViewName("name");
+		holder.mImageView.setTransitionName("image");
+		holder.mTextView.setTransitionName("name");
 		Intent i = new Intent(HomeScreenActivity.this, QuoteActivity.class);
 		i.putExtra("imageurl", mPersonList.get(holder.getPosition()).getImageUrl());
 		i.putExtra("name", mPersonList.get(holder.getPosition()).getName());

@@ -8,13 +8,13 @@
         android:id="@+id/quote_activity_person_image"
         android:layout_width="match_parent"
         android:layout_height="120dp"
-        android:viewName="image"
+        android:transitionName="image"
         android:scaleType="centerCrop" />
 
     <TextView
         android:id="@+id/quote_activity_person_name"
         android:layout_width="match_parent"
-        android:viewName="name"
+        android:transitionName="name"
         android:text="Albert"
         android:textAppearance="?android:textAppearanceMedium"
         android:textStyle="italic"
